@@ -1,0 +1,104 @@
+:root {
+    --primary: #7e162d;
+    --secondary: #dac99b;
+    --light-bg: #f8f9fa;
+    --dark-text: #333333;
+  }
+  
+  body {
+    font-family: Calibri, sans-serif;
+    color: var(--dark-text);
+    background-color: #ffffff;
+    padding: 16px;
+  }
+  
+  h1 {
+    color: var(--primary);
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  /* Grid container for mini-charts */
+  #charts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+    margin-bottom: 24px;
+  }
+  
+  /* Card wrapper for each chart */
+  .chart-card {
+    background-color: #ffffff;
+    border: 1px solid var(--secondary);
+    border-radius: 6px;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  
+  .chart-card h4 {
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    text-align: center;
+    color: var(--primary);
+    font-weight: 600;
+  }
+  
+  /* Pagination buttons */
+  #pagination {
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  
+  #pagination button {
+    background-color: var(--primary);
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin: 0 0.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  #pagination button:hover:not(:disabled) {
+    background-color: #6a1226;
+  }
+  
+  #pagination button:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+  
+  /* Filter & compare sections */
+  .filter-section,
+  #compare-section {
+    background-color: var(--light-bg);
+    border-left: 4px solid var(--primary);
+    border-radius: 6px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Select inputs (Choices.js or native) */
+  select,
+  .choices__inner {
+    font-family: Calibri, sans-serif;
+    border: 1px solid #ced4da !important;
+    border-radius: 4px !important;
+  }
+  
+  /* Chart.js canvases container */
+  canvas {
+    max-width: 100%;
+    height: auto !important;
+  }
+  
+  /* Ensure small text (labels, page info) matches */
+  #pageInfo,
+  #improvedList,
+  #compare-section h2 {
+    font-family: Calibri, sans-serif;
+    color: var(--dark-text);
+  }
+
+  
